@@ -1,0 +1,47 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generated output.
+  In production mode the html minifcation is enabled by default.
+  If you are not generating a valid html output please disable it manually.
+  You can do so by adding the following setting to your HtmlWebpackPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#options for details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <metaname="description"content="Web site created using create-react-app"/  >
+      <link rel="stylesheet" href="/css/all.css">
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/css/style.css">
+      <title>React App</title>
+    <link href="/task-app/static/css/main.0e8f9914.chunk.css" rel="stylesheet"></head>
+    <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+    <script>!function(e){function r(r){for(var n,a,p=r[0],f=r[1],i=r[2],c=0,s=[];c<p.len  gth;c++)a=p[c],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0  ;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(l&&l(r);s.lengt  h;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;  r++){for(var t=u[r],n=!0,p=1;p<t.length;p++){var f=t[p];0!==o[f]&&(n=!1)}n&&(u.splice(  r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r]  .exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.  l=!0,t.exports}a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{en  umerable:!0,get:t})},a.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&  Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"  __esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"obje  ct"===typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.de  fineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in   e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e  .__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a  .o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/task-app/";va  r p=this.webpackJsonpfirstreactproject=this.webpackJsonpfirstreactproject||[],f=p.push  .bind(p);p.push=r,p=p.slice();for(var i=0;i<p.length;i++)r(p[i]);var l=f;t()}([]);
+  //# sourceMappingURL=runtime-main.585b5d1b.js.map</script><script src="/task-app/stati  c/js/2.ff23cae2.chunk.js"></script><script src="/task-app/static/js/main.0ec70faf.chun  k.js"></script></body>
+  </html>
+  
+  - htmlparser.js:244 new HTMLParser
+    [task-app]/[html-minifier-terser]/src/htmlparser.js:244:13
+  
+  - htmlminifier.js:993 minify
+    [task-app]/[html-minifier-terser]/src/htmlminifier.js:993:3
+  
+  - htmlminifier.js:1354 Object.exports.minify
+    [task-app]/[html-minifier-terser]/src/htmlminifier.js:1354:16
+  
+  - index.js:1013 HtmlWebpackPlugin.minifyHtml
+    [task-app]/[html-webpack-plugin]/index.js:1013:46
+  
+  - index.js:429 HtmlWebpackPlugin.postProcessHtml
+    [task-app]/[html-webpack-plugin]/index.js:429:40
+  
+  - index.js:254 
+    [task-app]/[html-webpack-plugin]/index.js:254:25
+  
+  - task_queues.js:95 processTicksAndRejections
+    internal/process/task_queues.js:95:5
+  
+</pre>
